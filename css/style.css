@@ -1404,3 +1404,258 @@ body {
 
 
 
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.card-body p:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Styling for the Donate Button */
+.btn-donate {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-donate:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.btn-donate:focus {
+  outline: none;
+}
+
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+}
+
+/* Container Styles */
+.container {
+  max-width: 100%;
+  padding: 0 15px; /* Add padding on the sides for better spacing */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Make sure images and other media scale */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Video Container for Responsiveness */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%; /* Make sure the video takes the full width of the parent container */
+  background: #000;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Prevent Fixed Element from Breaking Layout */
+.fixed-element {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Prevent Large Elements from Causing Overflow */
+.container {
+  padding: 0 15px;
+}
+
+img,
+.video-container {
+  max-width: 100%;
+}
+
+/* Responsive Design: Mobile Devices */
+@media (max-width: 767px) {
+  .video-container {
+    padding-bottom: 56.25%; /* Maintain 16:9 Aspect Ratio for smaller screens */
+  }
+
+  .cta-box {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons a {
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive Design: Tablet Devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .video-container {
+    padding-bottom: 56.25%; /* Maintain 16:9 Aspect Ratio for tablets */
+  }
+
+  .cta-box {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Responsive Design: Desktop */
+@media (min-width: 1025px) {
+  .cta-box {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Additional Styles for Call-to-Action (CTA) Box */
+.cta-box {
+  
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.cta-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-buttons a {
+  padding: 12px 20px;
+  background-color:  #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons a:hover {
+  background-color: #218838;
+}
+
+.impact-message {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+/* Center the div containing the h3 and p */
+.centered-content {
+  text-align: center;  /* Centers the text inside the div */
+  margin: 0 auto;      /* Centers the div itself */
+  max-width: 800px;    /* Optional: limit the width of the content */
+  padding: 20px;       /* Optional: adds some padding around the content */
+}
+
+/* Optional: Add space below the elements for better visuals */
+.centered-content h3 {
+  margin-bottom: 10px;  /* Space below the heading */
+}
+
+.centered-content p {
+  margin-top: 0;
+  margin-bottom: 20px;  /* Space below the paragraph */
+}
