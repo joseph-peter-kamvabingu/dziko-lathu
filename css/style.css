@@ -1,175 +1,120 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
-}
-
-.layout_padding {
-  padding: 75px 0;
-}
-
-.layout_padding2 {
-  padding: 45px 0;
-}
-
-.layout_padding2-top {
-  padding-top: 45px;
-}
-
-.layout_padding2-bottom {
-  padding-bottom: 45px;
-}
-
-.layout_padding-top {
-  padding-top: 75px;
-}
-
-.layout_padding-bottom {
-  padding-bottom: 75px;
-}
-
-.heading_container h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.hero_next_section-margin {
-  margin-top: 100px;
-}
-
-/*header section*/
-
-.hero_area {
-  position: relative;
-  background-color: #2bbaf9;
-  height: 85vh;
-}
-
-.sub_page .hero_area {
-  height: auto;
-}
-
-.hero_area.sub_pages {
-  height: auto;
-}
-
-.header_section {
-  background-color: #000e17;
-}
-
-.header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
-.header_section .nav_container {
-  margin: 0 auto;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 10px 30px;
-  color: #fefdfc;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
-  position: relative;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link::after {
-  content: "";
-  position: absolute;
-  width: 65%;
-  left: 50%;
-  height: 2.5px;
-  background-color: #43bbfe;
-  bottom: 8px;
-  margin: 0 auto;
-  display: block;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: initial;
-}
-
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
-.navbar-brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* General navbar styling */
+.custom_nav-container .navbar-nav {
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.header-box h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #000e17;
+/* Navbar link alignment */
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item {
+  margin-right: 20px; /* Space between links */
 }
 
-
-.navbar-brand span {
-  font-size: 24px;
-  font-weight: 700;
-  color: #fefdfc;
-  margin-left: 10px;
-  text-transform: uppercase;
+/* Ensuring the logo and navbar items align in the center */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.custom_nav-container {
-  z-index: 99999;
-  padding: 5px 0;
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
 }
 
-.custom_nav-container .navbar-toggler {
-  outline: none;
+/* Button styling for Donate */
+.nav-item .btn.btn-danger {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ff3333;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) { /* Targets devices with a width of 768px or less */
+.nav-item .btn.btn-danger:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
+/* Update navbar background to match your old CSS */
+.header_section {
+  background-color: #000e17; /* Update to old background color */
+}
+
+/* Change color of Dziko Lathu to bold white */
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Change color of other nav items to white */
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  color: white !important;
+}
+
+/* Change the hover color for other links to blue */
+.custom_nav-container .navbar-nav .nav-item .nav-link:hover {
+  color: #0000ff; /* Update this to the blue you're using */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .custom_nav-container .navbar-nav {
+    text-align: center;
+    flex-direction: column; /* Stack items on top of each other */
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+  }
+
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item {
+    margin-right: 0; /* Remove extra margin between links in mobile view */
+    margin-bottom: 10px; /* Add space between stacked links */
+  }
+
   .custom_nav-container .navbar-toggler {
-    margin: 0 auto; /* Centers the button horizontally */
-    display: block; /* Allows centering with margin */
-    outline: none;
+    margin: 0 auto;
+    display: block;
   }
 
   .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-    background-image: url(../images/menu.png); /* Keep your custom icon */
-    background-size: 30px; /* Keep the existing size */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-position: center; /* Center the icon inside the button */
+    background-color: #fff;
   }
 }
 
+/* End header section */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff; /* Icon color */
+  position: relative;
+}
 
-/*end header section*/
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff; /* Icon color */
+  left: 0;
+  transition: all 0.3s;
+}
+
+.navbar-toggler-icon:before {
+  top: -8px;
+}
+
+.navbar-toggler-icon:after {
+  bottom: -8px;
+}
+
 
 /* slider section */
 .slider_section {
@@ -359,7 +304,6 @@ a:focus {
   background: linear-gradient(135deg, #2bbaf9, #1e9ef2); /* Change the background gradient */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
-
 /* Hover Effects for Icon */
 .offer_section .content-box .img-box:hover i {
   color: #2bbaf9; /* Change icon color on hover */
@@ -384,11 +328,14 @@ a:focus {
   margin-bottom: 8px;
   color: #2b2b2b; /* Darker text color for contrast */
   transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline */
 }
 
 .offer_section .content-box:hover .detail-box h6 {
-  color: #2bbaf9; /* Green title color on hover */
+  color: #007bff; /* Blue title color on hover */
+  text-decoration: none; /* Remove underline */
 }
+
 
 /* Paragraph Styling */
 .offer_section .content-box .detail-box p {
@@ -402,7 +349,6 @@ a:focus {
 .offer_section .content-box:hover .detail-box p {
   color: #333; /* Darker description color on hover */
 }
-
 
 
 
@@ -437,7 +383,7 @@ a:focus {
 .offer_section .challenges h3 {
   font-size: 28px;
   font-weight: 600;
-  color: #2b2b2b;
+  color: #2b2b2b; /* Dark color for the heading */
   margin-bottom: 20px;
   position: relative;
 }
@@ -447,7 +393,7 @@ a:focus {
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #2bbaf9; /* Accent color */
+  background-color: #2b2b2b; /* Changed to dark color */
   margin-top: 10px;
 }
 
@@ -513,7 +459,7 @@ a:focus {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #2bbaf9; /* Accent color */
+  background-color: #007bff; /* Blue color for button */
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
@@ -522,9 +468,9 @@ a:focus {
 }
 
 .offer_section .btn-primary:hover {
-  background-color: #2bbaf9; /* Darker green on hover */
+  background-color: #0056b3; /* Darker blue on hover */
   transform: translateY(-3px); /* Lift effect on hover */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
 }
 
 .offer_section .challenges p {
@@ -532,6 +478,7 @@ a:focus {
   color: #555;
   line-height: 1.8;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
