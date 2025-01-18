@@ -28,13 +28,13 @@
   padding: 10px 25px;
   border-radius: 5px;
   font-size: 16px;
-  background-color: #ff3333;
+  background-color: #000e17;
   color: white;
   transition: background-color 0.3s ease;
 }
 
 .nav-item .btn.btn-danger:hover {
-  background-color: #cc0000;
+  background-color: #43bbfe;
   color: white;
 }
 
@@ -1605,4 +1605,58 @@ img,
 .centered-content p {
   margin-top: 0;
   margin-bottom: 20px;  /* Space below the paragraph */
+}
+
+
+/* General Styles for Social Icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 1.5em; /* Default size */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Hover color */
+}
+
+/* Responsive Styling for Social Icons */
+@media (max-width: 767px) {
+  .social-icons {
+    text-align: center; /* Center-align icons on smaller screens */
+  }
+
+  .social-icons li {
+    margin-right: 8px; /* Reduced spacing for mobile */
+  }
+
+  .social-icons a {
+    font-size: 1.3em; /* Slightly smaller icons on mobile */
+  }
+}
+
+@media (max-width: 1024px) {
+  .social-icons li {
+    margin-right: 12px; /* Slightly larger spacing for tablet/medium screens */
+  }
+
+  .social-icons a {
+    font-size: 1.4em; /* Medium icon size for tablets */
+  }
+}
+
+@media (min-width: 1025px) {
+  .social-icons a {
+    font-size: 1.5em; /* Default icon size for larger screens */
+  }
 }

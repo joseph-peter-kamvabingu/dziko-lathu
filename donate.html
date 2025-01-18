@@ -129,59 +129,30 @@
     </div>
   </header>
 
-<!-- Contact Form Section -->
-<section class="contact_section layout_padding">
-  <div class="container">
-    <div class="heading_container">
-      <h2>
-        Get in Touch with
-        <span>
-          Dziko Lathu
-        </span>
-      </h2>
-    </div>
+    <!-- Coming Soon Section -->
+    <section class="coming-soon-section">
+      <div class="container">
+        <div class="header">
+          <h2>Donation Feature - Coming Soon</h2>
+          <p>We are currently working on launching our donation page. Stay tuned for more updates on how you can support Dziko Lathu and help us build a brighter future for Malawi and beyond.</p>
+        </div>
     
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <form 
-          action="https://formsubmit.co/josephpeterkamvabingu@gmail.com" 
-          method="POST"
-          onsubmit="handleFormSubmit(event)">
-          <!-- FormSubmit Hidden Fields -->
-          <input type="hidden" name="_next" value="index.html" />
-          <input type="hidden" name="_captcha" value="false" />
-
-          <div>
-            <input type="text" name="name" placeholder="Name" required />
-          </div>
-          <div>
-            <input type="email" name="email" placeholder="Email" required />
-          </div>
-          <div>
-            <input type="text" name="phone" placeholder="Phone Number" required />
-          </div>
-          <div>
-            <textarea name="message" class="message-box" placeholder="Message" required></textarea>
-          </div>
-          <div class="d-flex mt-4">
-            <button type="submit">
-              SEND
-            </button>
-          </div>
-        </form>
+        <!-- Link Back to Home -->
+        <div class="back-to-home">
+          <a href="index.html" class="btn-back-home">Return to Home Page</a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+ 
 
-<script>
-  function handleFormSubmit(event) {
-    alert("Your request has been submitted successfully!");
-  }
-</script>
 
-  <!-- end contact section -->
+  <!-- end about section -->
+
+  
+  <!-- end client section -->
+
+ 
+
 
   <!DOCTYPE html>
   <html lang="en">
@@ -234,7 +205,7 @@
             <div class="info_links">
               <h5>Contact Us</h5>
               <p>
-                Email: <a href="mailto:josephpeterkamvabingu@gmail.com">josephpeterkamvabingu@gmail.com</a><br>
+                Email: <a href="mailto:dzikolathu.org@gmail.com">dzikolathu.org@gmail.com</a><br>
                 Phone: <a href="https://wa.me/265992954281" target="_blank">+265 992 954 281</a> (WhatsApp)<br>
                 Location: Lilongwe, Malawi
               </p>
@@ -251,25 +222,44 @@
               </p>
             </div>
           </div>
-          <!-- Account -->
-          <div class="col-md-3">
-            <div class="pl-0 pl-lg-5 pl-md-4">
-              <h5>My Account</h5>
-              <p>
-                Access exclusive content and resources by creating an account with "Dziko Lathu." Stay informed and
-                connected.
-              </p>
-            </div>
-          </div>
+
+      <!-- Follow Us -->
+<div class="col-md-3">
+  <div class="pl-0 pl-lg-5 pl-md-4">
+    <h5>Follow Us on Social Media</h5>
+    <p>
+      Stay connected and up-to-date by following Dziko Lathu on our social media platforms. Join the conversation and
+      be part of our community.
+    </p>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/DzikoLathuMw" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://twitter.com/dzikolathu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://instagram.com/dzikolathu" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/106102197/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bw8WM93MkRGeJAL1zlRuCdQ%3D%3D" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      <!-- Added YouTube -->
+      <li><a href="https://www.youtube.com/@Dziko_Lathu" target="_blank"><i class="fab fa-youtube"></i></a></li>
+      <!-- Added WhatsApp -->
+      <li><a href="https://whatsapp.com/channel/0029Vb1PEMjCMY0KKbctAG0T" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+
         </div>
       </div>
     </section>
     <!-- End Info Section -->
+
+     <!-- Scroll to Top Arrow -->
+<div id="scrollToTop">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
   
     <!-- Footer Section -->
     <section class="container-fluid footer_section">
       <p>
-        &copy; 2024-25 Dziko Lathu. All Rights Reserved.
+        &copy; 2024-2025 Dziko Lathu. All Rights Reserved.
       </p>
     </section>
     <!-- End Footer Section -->
@@ -277,6 +267,8 @@
     <!-- JavaScript Files -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+  
   
     <!-- Map Script -->
     <script>
