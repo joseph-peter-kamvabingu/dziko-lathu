@@ -1655,8 +1655,10 @@ img,
   }
 }
 
+
 @media (min-width: 1025px) {
   .social-icons a {
     font-size: 1.5em; /* Default icon size for larger screens */
   }
+  
 }
